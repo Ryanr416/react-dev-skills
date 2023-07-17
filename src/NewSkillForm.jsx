@@ -1,3 +1,6 @@
+import "./NewSkillForm.css";
+
+
 export default function NewSkillForm() {
     return (
       <form>
