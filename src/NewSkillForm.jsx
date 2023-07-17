@@ -3,6 +3,7 @@ import "./NewSkillForm.css";
 
 export default function NewSkillForm() {
     return (
+      <ul class="NewSkillForm">
       <form>
         <label>
           {" "}
@@ -21,6 +22,7 @@ export default function NewSkillForm() {
             <button>Add Skill</button>
         </label>
       </form>
+      </ul>
     );
   }
   
