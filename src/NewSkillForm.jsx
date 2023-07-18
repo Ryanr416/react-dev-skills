@@ -3,7 +3,7 @@ import "./NewSkillForm.css";
 
 export default function NewSkillForm() {
     return (
-      <ul class="NewSkillForm">
+      <ul className="NewSkillForm">
       <form>
         <label>
           {" "}

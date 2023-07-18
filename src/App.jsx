@@ -1,9 +1,10 @@
 import SkillList from "./SkillList";
 import NewSkillForm from "./NewSkillForm";
+import { useState  } from "react";
 
 import "./styles.css";
 
-const skills = [
+const skillsArray = [
   { name: "HTML", level: 5 },
   { name: "CSS", level: 3 },
   { name: "JavaScript", level: 4 },
@@ -12,6 +13,9 @@ const skills = [
 
 export default function App() {
 
+const [skills, setSkills] = useState(skillsArray);
+
+console.log(skills)
 
   return (
     <div className="App">
