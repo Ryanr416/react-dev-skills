@@ -17,11 +17,27 @@ const [skills, setSkills] = useState(skillsArray);
 
 console.log(skills)
 
+
+function addSkill(skillsFromTheForm){
+  console.log(skillsFromTheForm, ' Skills from the form');
+
+  setSkills([
+    skillsFromTheForm,
+    ...skills
+ ])
+}
+
+
+
+
+
+
+
   return (
     <div className="App">
       <h1>React Dev Skills</h1>
       <SkillList skills={skills} />
-      <NewSkillForm />
+      <NewSkillForm addSkill={addSkill} />
     </div>
   );
 }
