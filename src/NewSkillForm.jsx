@@ -32,11 +32,11 @@ export default function NewSkillForm({addSkill}) {
 
   setSkills({
     name: '',
-    level: 1
+    level: '1'
   });
 
 
-    if(skills.name === '')
+    if(skill.name === '')
 
     return setErrorMessage('Please Enter a Skill')
    }
@@ -60,7 +60,7 @@ export default function NewSkillForm({addSkill}) {
                 <option value="5"> 5</option>
                 
             </select>
-            <button>Add Skill</button>
+            <button className="skill-button">Add Skill</button>
         </label>
       </form>
       </ul>

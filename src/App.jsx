@@ -3,6 +3,7 @@ import NewSkillForm from "./NewSkillForm";
 import { useState  } from "react";
 
 import "./styles.css";
+import "./App.css";
 
 const skillsArray = [
   { name: "HTML", level: 5 },
